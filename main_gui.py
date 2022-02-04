@@ -6,7 +6,6 @@ from PIL import Image
 import tkinter as tk
 from tkinter import filedialog
 
-from tkinter import filedialog
 from pathlib import WindowsPath
 
 #variables
@@ -34,14 +33,6 @@ def findBrightness(c, offset):
         x = x + 1
     return len(c)
     
-def findSameColor(c, color, offset):
-    x = offset
-    while(x<len(c)):
-        if(c[x] == color):
-            return x1
-        x = x + 1
-    return len(c)
-
 #main program
 
 root = tk.Tk()
@@ -91,7 +82,6 @@ for y in range(0, height):
     while(x<width):
         x1 = x
         x2 = findBrightness(row, x+1)
-        #x2 = findSameColor(row, x1 ,x+1)
 
         r = x2-x1
 
@@ -122,4 +112,3 @@ img.save(saveString)
 img.show()
 
 os.system("pause")
-
