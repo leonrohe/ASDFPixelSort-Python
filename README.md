@@ -7,6 +7,6 @@ https://github.com/kimasendorf/ASDFPixelSort
 
 # Examples
 
-![Example_1] (/images/example_1.png)
+![Example_1](/images/example_1.png)
 
-![Example_22] (/images/example_2.png)
+![Example_22](/images/example_2.png)
